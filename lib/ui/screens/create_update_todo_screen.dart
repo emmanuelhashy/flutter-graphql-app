@@ -55,7 +55,7 @@ class _CreateUpdateTodoScreenState extends State<CreateUpdateTodoScreen> {
               ),
             ),
             const SizedBox(height: 8),
-            ValueListenableBuilder(
+            ValueListenableBuilder<bool>(
                 valueListenable: _isCompleted,
                 builder: (context, value, child) {
                   return CheckboxListTile(
